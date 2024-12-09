@@ -97,6 +97,11 @@ html, body {
     border-color: #E5E7EB;
 }
 
+.inputs input:focus{
+    border-color: blue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .inputs form {
     display: flex; 
     flex-wrap: wrap;
@@ -117,7 +122,7 @@ html, body {
 .inputs input {
     padding: 5px;
     border-radius: 5px;
-    border: 2px solid #000;
+    border: 2px solid #E5E7EB;
 }
 
 .bottom {
@@ -131,12 +136,20 @@ button {
     background-color: #596D48;
     border-radius: 5px;
     border: 2px solid #596D48;
+
     color: white;
     font-family: 'Inter';
     font-size: 1rem;
     font-weight: 550;
+
     width: 10vw;
     height: 5vh;
+
+    cursor: not-allowed;
+}
+
+button:enabled{
+    cursor: pointer;
 }
 
 .bottom div {
