@@ -3,11 +3,18 @@
     src: url('fonts/Norse-Bold.otf') format('opentype');
 }
 
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 550;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Inter';
 }
 
 .container {
@@ -58,28 +65,36 @@ html, body {
     max-width: 100%;
     flex-basis: 33.33%;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 50px;
 }
 
 .intro {
     flex-direction: column;
     justify-content: center;
-    font-family: 'Inter';
     font-size: 1.5rem;
     font-weight: 550;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .letsdothis {
     display: flex;
-    font-family: 'Norse Bold';
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .form { 
     justify-content: center;
     flex-direction: column;
-    background-color: aqua;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     gap: 10px
+}
+
+.inputs input:invalid {
+    border-color: red;
+}
+
+.inputs input:valid {
+    border-color: #E5E7EB;
 }
 
 .inputs form {
@@ -101,18 +116,31 @@ html, body {
 
 .inputs input {
     padding: 5px;
-    border: 1px solid #000;
     border-radius: 5px;
+    border: 2px solid #000;
 }
 
 .bottom {
-    flex: 1;
+    display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.1);
+    gap: 30px;
 }
 
 button {
+    background-color: #596D48;
+    border-radius: 5px;
+    border: 2px solid #596D48;
+    color: white;
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 550;
     width: 10vw;
     height: 5vh;
+}
+
+.bottom div {
+    display: flex;
+    gap: 8px;
 }
 
