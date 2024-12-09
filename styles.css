@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background-image: url('images/photo-1585202900225-6d3ac20a6962.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    flex-basis: 0 0 30%;
+    width: 40vw;
+    height: 100vh;
+}
+
+.logo {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33%;    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo #odin {
+    font-family: 'Norse Bold';
+    font-size: 7rem;
+    color: white;
+}
+
+.left img {
+    max-width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro, .form, .bottom {
+    display: flex;
+    max-width: 100%;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.intro {
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.letsdothis {
+    display: flex;
+    font-family: 'Norse Bold';
+    font-size: 3rem;
+}
+
+.form { 
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+    gap: 10px
+}
+
+.inputs form {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.inputs form > div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.inputs label {
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.bottom {
+    flex: 1;
+    flex-direction: column;
+    background-color: red;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+}
+
